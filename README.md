@@ -51,6 +51,51 @@ if (cluster.isMaster) {
 ```
 
 
+
+comparation
+-------------------
+<table>
+    <tr>
+        <td></td><td>vertx</td><td>node</td>
+    </tr>
+    <tr>
+        <td>
+          Complete requests:<br>      
+          Failed requests:<br>        
+          Total transferred:<br>      
+          HTML transferred: <br>      
+          Requests per second:<br>    
+          Time per request: <br>      
+          Time per request:<br>       
+          Transfer rate: <br>         
+        </td>
+        <td>
+          23.513 seconds<br>
+          100000<br>
+          0<br>
+          14300000 bytes<br>
+          6800000 bytes<br>
+          4252.96 [#/sec] (mean)<br>
+          235.131 [ms] (mean)<br>
+          0.235 [ms] (mean, across all concurrent requests)<br>
+          593.92 [Kbytes/sec] received<br>
+        </td>
+        <td>
+          18.491 seconds<br>
+          100000<br>
+          0<br>
+          10700000 bytes<br>
+          6800000 bytes<br>
+          5407.97 [#/sec] (mean)<br>
+          184.912 [ms] (mean)<br>
+          0.185 [ms] (mean, across all concurrent requests)<br>
+          565.09 [Kbytes/sec] received<br>
+        </td>
+    </tr>
+</table>
+
+
+
 Benchmark
 -------------------------------------
 ```shell
@@ -127,50 +172,4 @@ Percentage of the requests served within a certain time (ms)
   99%    284
  100%   1262 (longest request)
 ```
-
-comparation
--------------------
-<table>
-    <tr>
-        <td></td><td>vertx</td><td>node</td>
-    </tr>
-    <tr>
-        <td>
-          Time taken for tests:<br>   
-          Complete requests:<br>      
-          Failed requests:<br>        
-          Total transferred:<br>      
-          HTML transferred: <br>      
-          Requests per second:<br>    
-          Time per request: <br>      
-          Time per request:<br>       
-          Transfer rate: <br>         
-        </td>
-        <td>
-          23.513 seconds<br>
-          100000<br>
-          0<br>
-          14300000 bytes<br>
-          6800000 bytes<br>
-          4252.96 [#/sec] (mean)<br>
-          235.131 [ms] (mean)<br>
-          0.235 [ms] (mean, across all concurrent requests)<br>
-          593.92 [Kbytes/sec] received<br>
-        </td>
-        <td>
-          18.491 seconds<br>
-          100000<br>
-          0<br>
-          10700000 bytes<br>
-          6800000 bytes<br>
-          5407.97 [#/sec] (mean)<br>
-          184.912 [ms] (mean)<br>
-          0.185 [ms] (mean, across all concurrent requests)<br>
-          565.09 [Kbytes/sec] received<br>
-        </td>
-    </tr>
-</table>
-
-
-
 
