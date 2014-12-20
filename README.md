@@ -132,6 +132,9 @@ comparation
 -------------------
 <table>
     <tr>
+        <td></td><td>vertx</td><td>node</td>
+    </tr>
+    <tr>
         <td>
           Time taken for tests:<br>   
           Complete requests:<br>      
